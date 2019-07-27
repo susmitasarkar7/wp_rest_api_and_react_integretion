@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wp_rest_api_and_react_integretion/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wp_rest_api_and_react_integretion/index.php [L]
+</IfModule>
+
+# END WordPress
